@@ -1,0 +1,333 @@
+/*--------start css global*/
+:root{
+    --font-prinspal: 'Roboto', sans-serif;
+    --font-paragraph: 'Tajawal', sans-serif;
+   --color-1:#d67c24;
+   
+   --color-3:#e5850c;
+   --color-2:#000;
+   --like-color:#eb3728;
+   --shadow: 0em 0em 0.5em #333;
+   --back-color: rgb(248, 247, 247);
+
+}
+.container{
+    padding: 0 20px;
+    margin: 0 auto;
+}
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+@media(min-width:991px){
+    .container{
+      width: 970px;
+    }
+}
+@media(min-width:767px){
+    .container{
+        width: 763px;
+    }
+   
+}
+
+
+/*--------end css global---------*/
+
+/*--------start About ---------*/
+.about .container{
+    position: relative;
+}
+.about .container .abk {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+ 
+}
+.about .about_{
+    position: absolute;
+    width: 30px;
+    margin: 10px ;
+    
+}
+.about .about_ i{
+   color: white;
+   border: 2px solid white;
+   padding: 5px;
+   border-radius:50%;
+   margin: 4px;
+   cursor: pointer;
+  
+}
+.about .image {
+ height: 150px;
+}
+.about .image img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+ 
+  max-height: 100%;
+}
+.about .image h1{
+  position: absolute;
+  bottom: 20px;
+  right: 30%;
+  font-family:var(--font-prinspal) ;
+  font-size: 30px;
+  color: white;
+  text-shadow: 0.5em 0.1em 0.5em var(--color-2);
+  font-weight: bold;
+  left:45%;
+  letter-spacing: 2px;
+}
+
+/*--------end home ---------*/
+
+ /*-------- start discription ---------*/
+
+.pay .container .coffee{
+  position: relative;
+  background-color: white;
+  box-shadow: var(--shadow);
+  margin: -35px 0 0;
+  z-index: 1;
+  border-radius: 15px;
+  margin-bottom: 10px;
+
+}
+
+.pay .container .coffee  .text-img{
+  display: flex;
+}
+.pay .container  .coffee .text-img .img {
+ margin: 20px 15px;
+ width: 200PX;
+}
+.pay .container  .coffee .text-img .img img{
+ 
+ max-width: 100%;
+box-shadow: var(--shadow);
+ border-radius: 10px;
+}
+.pay .container  .coffee .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+.pay .container  .coffee .text-img {
+  display: flex;
+  align-items: center;
+ 
+}
+.pay .container  .coffee .text-img .text {
+  display: flex;
+  flex-direction: column;
+}
+.pay .container  .coffee .text-img .text h3{
+ font-family: var(--font-prinspal);
+ font-weight: normal;
+ font-size: 20px;
+ letter-spacing: 1px;
+}
+.pay .container  .coffee .text-img .text p{
+ font-family: var(--font-paragraph);
+ color: #333;
+
+}
+
+.pay .container .coffee .nombr p {
+  color: white;
+  font-size: 30px;
+  background-color: var(--color-1);
+  margin: 5px;
+  width: 31px;
+  text-align: center;
+  border-radius: 5px;
+  user-select: none;
+  font-family: var(--font-paragraph);
+}
+ .pay .container .coffee .nombr .nomb{
+  font-family: var(--font-prinspal);
+  color: var(--color-1);
+  font-size: 25px;
+  padding: 5px 10px ;
+  background-color: transparent;
+  margin: 5px;
+  
+  text-align: center;
+  border-radius: 10px;
+  }
+  .pay .container .coffee .nombr {
+    display: flex;
+  
+ }
+@media(max-width:512px){
+  
+  .pay .container .coffee .nombr p{
+    font-size: 15px;
+    padding: 7px;
+    margin: 5px;
+width: 15px;
+}
+   
+    
+    .pay .container .coffee .nombr {
+     display: flex;
+   
+  }
+    .pay .container .coffee .nombr .nomb{
+      margin:5px 0 ;
+      font-size: 18px;
+      padding: 2px 2px 0px ;
+      height: 25px;
+      text-align: center;
+     
+      }
+      .pay .container .coffee .text-img .text p {
+        font-family: var(--font-paragraph);
+        color: #333;
+        margin: 8px 0;
+    }
+      .pay .container .coffee .text-img .img {
+        margin: 10px 5px;
+        width: 100PX;
+    }
+    .pay .container .coffee .text-img .text h3 {
+      font-size: 15px;
+  }
+}
+/*--------end product  ---------*/
+@media(max-width:512px){
+  .pay .container  .coffee .text-img .img {
+      margin: 20px 15px;
+      width: 100PX;
+     
+  }
+  
+  .pay .container  .coffee .text-img .text h3 {
+      font-family: var(--font-prinspal);
+      font-weight: normal;
+      font-size: 15px;
+      letter-spacing: 1px;
+      margin: 8px 0;
+  }
+
+  .pay .container  .coffee .text-img .text p {
+      font-size: 12px;
+      margin: 8px 0;
+      font-size: 10px;
+  }
+}
+/*--------start information  ---------*/
+
+
+.information  .liste{
+  padding: 20px 0;
+}
+.information  .liste h1{
+  text-transform: capitalize;
+  font-family: var(--font-prinspal);
+  letter-spacing: 1px;
+  margin:20px 15px ;
+  font-size: 20px;
+}
+.information .liste .input{
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+ justify-content: center;
+ align-items: center;
+}
+.information  .liste .input  .info-1 , .info-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+.information  .liste .input  input{
+  width: 80%;
+  margin: 10px;
+  height: 35px;
+  text-transform: capitalize;
+  font-family: var(--font-paragraph);
+  outline: none;
+
+border: none;
+  border-bottom: 0.3px solid #333;
+  background-color: transparent;
+  padding: 10px;
+  letter-spacing: 1px;
+ }
+
+
+/*--------end information  ---------*/
+
+/*--------start coupan  ---------*/
+.coupan {
+display: flex;
+flex-direction: column;
+}
+.coupan .P{
+  position: relative;
+margin:0 10% ;
+  text-align: center;
+  font-family: var(--font-prinspal);
+  background-color: #dbcfd3;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 5px;
+}
+.coupan .P::after{
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  z-index: 1;
+  right: -10px;
+  border-radius: 50%;
+}
+.coupan .P::before{
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  z-index: 1;
+  left: -10px;
+  border-radius: 50%;
+}
+.coupan .btn{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10%;
+}
+.coupan .btn p,h3{
+ font-family: var(--font-paragraph);
+ color: #494949;
+ font-size: 18px;
+}
+.coupan .btn h1,h3{
+  margin: 0;
+ }
+ .coupan .btn h1{
+  font-family: var(--font-prinspal);
+  font-size: 20px;
+  margin: 3px 0;
+ }
+ .coupan .btn .link{
+  text-align: center;
+ }
+ .coupan .btn a{
+ font-size: 18px;
+ padding: 12px ;
+ margin: 15px  0;
+ background-color: var(--color-1);
+border-radius: 10px;
+text-decoration: none;
+color: white;
+font-family: var(--font-prinspal);
+DISPLAY: block;
+ }
+/*--------end coupan  ---------*/

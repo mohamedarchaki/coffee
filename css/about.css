@@ -37,7 +37,6 @@
 
 
 /*--------end css global---------*/
-
 /*--------start About ---------*/
 .about .container{
     position: relative;
@@ -77,6 +76,7 @@
 /*--------end home ---------*/
 
  /*-------- start discription ---------*/
+ 
  .information .container .title{
     padding: 20px 0;
     border-radius: 10px;
@@ -101,12 +101,9 @@
    margin: 15px;
 }
 .information .container .title .like {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  position: absolute;
-  right: 0;
-  top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
    
 }
 .information .container .title .like .fa-heart{
@@ -208,3 +205,4 @@
   }
  /*-------- start discription ---------*/
 
+ 

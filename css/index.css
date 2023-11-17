@@ -71,56 +71,6 @@
 .home .container .menu ul li:hover {
  color: var(--color-1);
 }
-.home::before{
-    content: '';
-    height: 100%;
-    width: 100%;
-    background-image: url(../img/card.jpg);
-    background-size: cover;
-    position: fixed;
-    z-index: -1;
-    filter: blur(15px)
-}
-
-.home .container {
-    position: relative;
-}
-.home .container .back{
-    border-radius: 15px ;
-    box-shadow: var(--shadow);    
-}
-.home .container .menu ul {
-    display: none;
-}
-
- .home .container .menu ul {
-
-    flex-direction: column;
-    position: absolute;
-    z-index: 1;
-   left: -5px;;
-    top: 28px;
-     text-align: center;
-     transition: 0.4s;
-}
-.home .container .menu ul li {
-    display: block;
-   font-size: 22px;
-  font-family: var(--font-prinspal);
-   letter-spacing: 1px;
-   margin-bottom: 15px;
-   color: white;
-  transition: 0.4s;
-  border-bottom: 1px solid rgb(236, 236, 236);
-
-}
-.home .container .menu ul a {
-  text-decoration: none;
-
-}
-.home .container .menu ul li:hover {
- color: var(--color-1);
-}
 .home .container .menu {
    position: absolute;
    width: 30px;
@@ -168,6 +118,25 @@
     width: 50%;
     
  }
+.home::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/card.jpg);
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+    filter: blur(15px)
+}
+
+.home .container {
+    position: relative;
+}
+.home .container .back{
+    border-radius: 15px ;
+    box-shadow: var(--shadow);    
+}
+
 .home .container .image img {
     max-width: 100%;
     border-radius: 10px;
@@ -234,6 +203,7 @@
      font-size: 15px;
  }
 }
+
 /*--------end home ---------*/
 /*-------- start product ---------*/
 .product .container .header{
@@ -281,6 +251,7 @@
         color: var(--color-2);
         font-size: 15px;
     }
+   
 }
      /*--------search  ---------*/
 

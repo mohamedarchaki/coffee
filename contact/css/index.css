@@ -1,0 +1,207 @@
+/*--------start css global*/
+:root{
+    --font-prinspal: 'Roboto', sans-serif;
+    --font-paragraph: 'Tajawal', sans-serif;
+   --color-1:#d67c24;
+   --color-2:#000;
+   --shadow: 0em 0em 0.5em #333;
+
+}
+*{
+    user-select: none;
+}
+.container{
+    padding: 0 20px;
+    margin: 0 auto;
+}
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+@media(min-width:991px){
+    .container{
+      width: 970px;
+    }
+}
+@media(min-width:767px){
+    .container{
+        width: 763px;
+    }
+   
+}
+/*_________________________*/
+
+.contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+
+}
+.contact .container h1{
+    position: absolute;
+    top: 6%;
+    left: 40%;
+    right: 60%;
+    z-index: 1;
+    color: white;
+    font-family: var(--font-prinspal);
+    letter-spacing: 2px;
+    
+}
+.contact .container #i{
+    position: absolute;
+    top: 7%;
+    left: 40%;
+    right: 60%;
+    z-index: 1;
+    color: white;
+    width: 20px;
+    left: 10px;
+    top: 8%;
+    font-size: 20px;
+    padding: 5px 5px 5px 8px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.contact .container {
+    background-image: url(../img/tasse-cafe-table-bois-fond-sombre.jpg);
+    background-size: cover;
+    box-shadow: var(--shadow);
+}
+
+.contact .container  .input{
+    position: absolute;
+   z-index: 1;
+   display: flex;
+   flex-direction: column;
+   width: 90%;
+   top: 90px;
+   left: 15px;
+
+    }
+    .contact .container  .input input::placeholder,textarea::placeholder{
+        color: white;
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-family: var(--font-paragraph);
+    }
+    .contact .container  .input input,textarea,.link{
+        outline: none;
+       margin: 25px 0;
+       height: 30px;
+       width: 43%;
+       background-color: transparent;
+       border: none;
+       border-bottom: 2px solid rgb(235, 235, 235);
+       filter: drop-shadow(10px -11px 6px #333);
+       color: white;
+        font-size: 18px;
+        letter-spacing: 2px;
+       font-family: var(--font-paragraph);
+         }
+         .contact .container  .input textarea{
+            margin-top: 30px;
+            height: 100px;
+         }
+         .contact .container .input a{
+            text-align: center;
+            background-color: var(--color-1);
+            border: 2px solid rgb(235, 235, 235);
+            filter: none;
+            padding: 5px 0 0 0 ;
+            text-decoration: none;
+         }
+@media(max-width:500px){
+    .contact .container  .input input,textarea,a{
+        
+       width: 70%;
+
+         }
+         .contact .container  .input a{
+        
+            width: 70%;
+     
+              }
+}
+@media(max-width:450px){
+    .contact .container  .input input,textarea,a{
+        
+       width: 100%;
+
+         }
+         .contact .container .input {
+            padding: 15px;
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            top: 90px;
+            left: 0px;
+            align-items: center;
+        }
+        .contact .container .input input, textarea, .link {
+           
+            height: 25px;
+        }
+        .contact .container .input a {
+           padding: 3px 0 0 0 ;
+            width: 100%;
+        }
+        .contact .container .input {
+            padding: 10px;
+            width: 90%;
+           height: 90%;
+        }
+        .contact .container ul{
+            position: absolute;
+            z-index: 1;
+        top: 0px;
+        right: 10px;
+        display: inline-flex;
+        list-style: none;
+        margin: 5px;
+        
+        }
+        .contact .container ul li i{
+           margin: 3px;
+          background-color:  white;
+           color: var(--color-1);
+           font-size: 15px;
+           padding: 5px;
+           border-radius: 50%;
+        
+        }
+}
+
+.contact .backgr{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/card.jpg) ;
+    background-size: cover;
+    filter: blur(15px);
+
+}
+.contact .container ul{
+    position: absolute;
+    z-index: 1;
+    top: 6%;
+right: 20px;
+display: inline-flex;
+list-style: none;
+
+}
+.contact .container ul li i{
+   margin: 5px;
+  background-color:  white;
+   color: var(--color-1);
+   font-size: 18px;
+   padding: 5px;
+   border-radius: 50%;
+
+}
